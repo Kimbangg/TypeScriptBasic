@@ -9,6 +9,9 @@
     makeCoffee(shots: number): CoffeeCup;
   }
 
+  // class를 abstract화 한다면, 그 자체를 오브젝트화 즉 instance로 만드는게 불가능하다.
+  // 이러한 class를 부모로 삼아 쓰는 class 사이에서 다르게 쓰여야만 하는 Function들이 있다면
+  // 그것을 abstract으로 하여, 오버라이딩 하지 않고도 자유롭게 사용이 가능하다
   abstract class CoffeeMachine implements CoffeeMaker {
     private static BEANS_GRAM_PER_SHOT: number = 7; // class level => 오브젝트별로 새로 생성되지 않는다.
     private coffeeBeans: number = 0; // istance(object)
