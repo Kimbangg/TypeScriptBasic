@@ -160,4 +160,5 @@
 
   const sweetCandyMachine = new CoffeeMachine(12, noMilk, candySugar);
   const sweetMachine = new CoffeeMachine(12, noMilk, sugar);
+  
 }
